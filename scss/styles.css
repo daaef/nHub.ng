@@ -1,0 +1,594 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'Lane-Narrow';
+  src: url("Lane-Narrow.ttf.woff") format("woff"), url("Lane-Narrow.ttf.svg#Lane-Narrow") format("svg"), url("Lane-Narrow.ttf.eot"), url("Lane-Narrow.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal; }
+/* line 14, _reset.scss */
+* {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-family: "Lane-Narrow" !important; }
+
+/* line 18, _reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 30, _reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 34, _reset.scss */
+body {
+  line-height: 1; }
+
+/* line 38, _reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 42, _reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 46, _reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 51, _reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 55, _reset.scss */
+svg {
+  position: relative; }
+
+/* line 59, _reset.scss */
+.hide {
+  display: none; }
+
+/* line 2, styles.scss */
+.flip {
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+/* line 5, styles.scss */
+.bgblack {
+  background-color: black !important; }
+
+/* line 8, styles.scss */
+header {
+  min-height: 730px;
+  background: url(../img/bgHead.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: 100%; }
+
+/* line 15, styles.scss */
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  font-weight: 900; }
+
+/* line 23, styles.scss */
+.headsvg text {
+  font-weight: 900; }
+
+/* line 27, styles.scss */
+.service1 {
+  min-height: 75vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 5, 3, 0.9)), to(rgba(8, 5, 3, 0.9))), url(../img/services1.png);
+  background: linear-gradient(rgba(8, 5, 3, 0.9), rgba(8, 5, 3, 0.9)), url(../img/services1.png);
+  background-size: cover;
+  background-position: left center;
+  -webkit-clip-path: polygon(0 0, 0 59vh, 100% 100%, 100% 0);
+          clip-path: polygon(0 0, 0 59vh, 100% 100%, 100% 0);
+  padding-bottom: 16%; }
+
+@media (max-width: 1001px) {
+  /* line 36, styles.scss */
+  .service1 {
+    -webkit-clip-path: polygon(0 0, 0 85vh, 100% 100%, 100% 0);
+            clip-path: polygon(0 0, 0 85vh, 100% 100%, 100% 0); } }
+@media (max-width: 810px) {
+  /* line 41, styles.scss */
+  .service1 {
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+            clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0); } }
+/* line 46, styles.scss */
+.one.uk-heading-primary {
+  padding-bottom: 30px;
+  color: white; }
+
+/* line 50, styles.scss */
+.one.uk-heading-primary:after {
+  content: "";
+  display: block;
+  border-bottom: solid #f58634 1px;
+  position: relative;
+  width: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: inherit; }
+
+/* line 62, styles.scss */
+#flipCont {
+  position: relative;
+  top: -225px; }
+
+/* line 66, styles.scss */
+.white, .white > * {
+  color: white; }
+
+/* line 69, styles.scss */
+.black, .black > * {
+  color: black !important; }
+
+/* line 72, styles.scss */
+.section p {
+  font-size: 25px; }
+
+/* line 76, styles.scss */
+.request {
+  margin-top: 20px;
+  background-color: #313131;
+  border-left: 5px solid #e99b5b;
+  padding: 10px 15px; }
+
+/* line 82, styles.scss */
+.request > h4 {
+  font-size: 27px;
+  color: #e99b5b;
+  padding-bottom: 10px; }
+
+/* line 87, styles.scss */
+.request a {
+  color: #e99b5b; }
+
+/* line 91, styles.scss */
+.testimonials {
+  min-height: 80vh; }
+
+/* line 95, styles.scss */
+.title {
+  color: #e27b26 !important;
+  padding-bottom: 10px;
+  font-weight: 900;
+  font-size: 17px; }
+
+/* line 102, styles.scss */
+.cardgrid p {
+  font-size: 18px; }
+
+/* line 106, styles.scss */
+.uk-card-muted {
+  background-color: #e8e5e5; }
+
+/* line 109, styles.scss */
+.uk-card-muted p {
+  font-weight: 600; }
+
+/* line 114, styles.scss */
+.service2 {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 5, 3, 0.9)), to(rgba(8, 5, 3, 0.9))), url(../img/bgHead.png);
+  background: linear-gradient(rgba(8, 5, 3, 0.9), rgba(8, 5, 3, 0.9)), url(../img/bgHead.png);
+  background-size: cover;
+  background-position: left center;
+  -webkit-clip-path: polygon(0 16vh, 0 100%, 100% 100%, 100% 0);
+          clip-path: polygon(0 16vh, 0 100%, 100% 100%, 100% 0);
+  padding-top: 16vh;
+  text-align: right; }
+
+/* line 124, styles.scss */
+.service3 {
+  min-height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(9, 9, 25, 0.9)), to(rgba(9, 9, 25, 0.9))), url(../img/devsBG.jpg);
+  background: linear-gradient(rgba(9, 9, 25, 0.9), rgba(9, 9, 25, 0.9)), url(../img/devsBG.jpg); }
+
+/* line 128, styles.scss */
+.hexagon {
+  height: 320px;
+  position: relative;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: #ffffff; }
+
+/* line 135, styles.scss */
+.hexagon:before {
+  content: "";
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  left: 1%;
+  top: 1%;
+  z-index: -1;
+  background: url(../img/Afe.JPG) 50% 0 no-repeat;
+  background-size: cover;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+
+/* line 150, styles.scss */
+.uk-overlay {
+  height: 150px; }
+
+/* line 153, styles.scss */
+.trainers {
+  min-height: 80vh;
+  background: url(../img/trainers.jpg) 0 0 no-repeat;
+  background-size: cover; }
+
+/* line 159, styles.scss */
+.request.two {
+  background-color: #0c0c1c;
+  margin-left: 40px; }
+
+/* line 164, styles.scss */
+.img > img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+/* line 169, styles.scss */
+.img {
+  position: relative;
+  top: -50px; }
+
+/* line 174, styles.scss */
+.home {
+  padding-top: 100px; }
+
+/* line 178, styles.scss */
+a.uk-slidenav-large.uk-border-circle {
+  border-radius: 50%;
+  border: 1px solid; }
+
+/* line 182, styles.scss */
+.formap {
+  min-height: 80vh;
+  background-color: #181925; }
+
+/* line 187, styles.scss */
+.uk-input, textarea {
+  background-color: #1d1e30 !important;
+  color: #fff !important;
+  border: 0px solid !important; }
+
+/* line 192, styles.scss */
+.uk-margin .uk-inline {
+  min-width: 100%; }
+
+/* line 195, styles.scss */
+textarea {
+  padding-left: 40px !important; }
+
+/* line 198, styles.scss */
+textarea::-webkit-input-placeholder {
+  position: relative;
+  padding-top: 25px; }
+textarea:-ms-input-placeholder {
+  position: relative;
+  padding-top: 25px; }
+textarea::-ms-input-placeholder {
+  position: relative;
+  padding-top: 25px; }
+textarea::placeholder {
+  position: relative;
+  padding-top: 25px; }
+
+/* line 204, styles.scss */
+iframe {
+  width: 100%;
+  height: auto; }
+
+@media (max-width: 959px) {
+  /* line 210, styles.scss */
+  .img {
+    position: relative;
+    top: -10px; } }
+/* line 216, styles.scss */
+.footer > .uk-container > div > div > .links > a {
+  border-right: 2px solid white;
+  color: #ffffff;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .6s;
+  transition: all .6s; }
+
+/* line 225, styles.scss */
+.footer > .uk-container > div > div > .links > a:hover {
+  color: #ffa347 !important;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  padding-left: 15px;
+  padding-right: 10px; }
+
+/* line 231, styles.scss */
+.footer > .uk-container > div > div > .links > a:last-child {
+  border-right: 0px solid;
+  padding-right: 0px; }
+
+/* line 236, styles.scss */
+.fb {
+  background-color: #005397; }
+
+/* line 240, styles.scss */
+.tw {
+  background-color: #00aedd; }
+
+/* line 244, styles.scss */
+.yt {
+  background-color: #890038; }
+
+/* line 248, styles.scss */
+.inst {
+  background-color: #dd0060; }
+
+/* line 253, styles.scss */
+.dropt {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 142px;
+  color: black; }
+
+@media (min-width: 570px) {
+  /* line 263, styles.scss */
+  .dropt {
+    display: none; } }
+@media (max-width: 570px) {
+  /* line 269, styles.scss */
+  .uk-navbar-left, .uk-navbar-right {
+    height: 40px; }
+
+  /* line 272, styles.scss */
+  nav .uk-navbar-left li > a, nav .uk-navbar-right li > a {
+    display: none; } }
+/* line 276, styles.scss */
+.drop {
+  width: 286px !important;
+  left: 50% !important;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 104px !important;
+  z-index: 2 !important; }
+
+/* line 283, styles.scss */
+.top {
+  width: 80%;
+  position: relative;
+  top: 10px; }
+
+/* line 289, styles.scss */
+.rote {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+/* line 293, styles.scss */
+.react {
+  background-color: #000000; }
+
+/* line 296, styles.scss */
+.react:first-child {
+  background-color: #000000;
+  background-image: url(../img/react.png);
+  z-index: 2; }
+
+/* line 301, styles.scss */
+.html5 {
+  background-color: #e34d28; }
+
+/* line 304, styles.scss */
+.html5:first-child {
+  background-color: #e34d28;
+  background-image: url(../img/html.png);
+  z-index: 2; }
+
+/* line 309, styles.scss */
+.js {
+  background-color: #f0db4f; }
+
+/* line 312, styles.scss */
+.js:first-child {
+  background-color: #f0db4f;
+  background-image: url(../img/JavaScript-logo.png);
+  z-index: 2; }
+
+/* line 317, styles.scss */
+.ng {
+  background-color: #e52a3b; }
+
+/* line 320, styles.scss */
+.ng:first-child {
+  background-color: #e52a3b;
+  background-image: url(../img/ang.png);
+  z-index: 2; }
+
+/* line 325, styles.scss */
+.laravel {
+  background-color: #f35146; }
+
+/* line 328, styles.scss */
+.laravel:first-child {
+  background-color: #f35146;
+  background-image: url(../img/laravel.png);
+  z-index: 2;
+  background-size: cover !important; }
+
+/* line 335, styles.scss */
+.graphql {
+  background-color: #ffffff; }
+
+/* line 338, styles.scss */
+.graphql:first-child {
+  background-color: #ffffff;
+  background-image: url(../img/graphql.png);
+  z-index: 2; }
+
+/* line 343, styles.scss */
+.more {
+  background-color: #ffffff;
+  left: 0; }
+
+/* line 347, styles.scss */
+.more:first-child {
+  background-color: #ffffff;
+  background-image: url(../img/more.png);
+  z-index: 2; }
+
+/* line 352, styles.scss */
+.wp {
+  background-color: #21759a; }
+
+/* line 355, styles.scss */
+.wp:first-child {
+  background-color: #21759a;
+  background-image: url(../img/wP.png);
+  z-index: 2; }
+
+/* line 360, styles.scss */
+.py {
+  background-color: #575354; }
+
+/* line 363, styles.scss */
+.py:first-child {
+  background-color: #575354;
+  background-image: url(../img/Py.png);
+  z-index: 2; }
+
+/* line 368, styles.scss */
+.ruby {
+  background-color: #cc1c26; }
+
+/* line 371, styles.scss */
+.ruby:first-child {
+  background-color: #cc1c26;
+  background-image: url(../img/ruby2.png);
+  z-index: 2; }
+
+/* line 376, styles.scss */
+.android {
+  background-color: #a5c639; }
+
+/* line 379, styles.scss */
+.android:first-child {
+  background-color: #a5c639;
+  background-image: url(../img/android.png);
+  z-index: 2; }
+
+/* line 384, styles.scss */
+.node {
+  background-color: #ffffff; }
+
+/* line 387, styles.scss */
+.node:first-child {
+  background-color: #ffffff;
+  background-image: url(../img/node.png);
+  z-index: 2; }
+
+/* line 392, styles.scss */
+.xamarin {
+  background-color: #3598db; }
+
+/* line 395, styles.scss */
+.xamarin:first-child {
+  background-color: #3598db;
+  background-image: url(../img/xamarin.png);
+  z-index: 2; }
+
+/* line 400, styles.scss */
+.set .uk-card {
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center center;
+  z-index: 3;
+  padding: 20px; }
+
+/* line 407, styles.scss */
+.set .uk-card p {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+/* line 414, styles.scss */
+.set .uk-card > * {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 421, styles.scss */
+.poly .uk-card {
+  width: 100%;
+  height: 230px;
+  padding: 0;
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  -webkit-transition: all 1s;
+  transition: all 1s; }
+
+/* line 429, styles.scss */
+.mid {
+  position: relative;
+  top: 163px; }
+
+/* line 433, styles.scss */
+.bottom {
+  position: relative;
+  top: 320px;
+  width: 80%; }
+
+/* line 439, styles.scss */
+.cardCont {
+  position: relative;
+  top: -225px; }
+
+@media (max-width: 842px) {
+  /* line 445, styles.scss */
+  .poly .uk-card {
+    height: 170px; }
+
+  /* line 449, styles.scss */
+  .mid {
+    position: relative;
+    top: 115px; }
+
+  /* line 454, styles.scss */
+  .bottom {
+    top: 228px; } }
+/* line 458, styles.scss */
+.poly {
+  z-index: 1; }
